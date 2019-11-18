@@ -2,7 +2,7 @@ package com.lz.list;
 
 import javax.swing.*;
 import java.util.ArrayList;
-
+//
 public class MyStack {
     ArrayList<Object> stack ;
     Object base;
