@@ -80,8 +80,8 @@ public class MyStack {
         }
     }
 
-    public static void main(String[] args) {
-        MyStack myStack = new MyStack();
+//    public static void main(String[] args) {
+//        MyStack myStack = new MyStack();
 //        myStack.push(1);
 //        myStack.push(3);
 //        myStack.push(5);
@@ -89,8 +89,8 @@ public class MyStack {
 //        myStack.pop();
 //        System.out.println(myStack.stackLength());
 //        myStack.stackTraverse();
-        myStack.conversion(1348,8);
-    }
+//        myStack.conversion(1348,8);
+//    }
 
 }
 
