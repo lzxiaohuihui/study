@@ -1,7 +1,7 @@
 package com.lz.study;
 
 import java.util.Arrays;
-
+//迷宫（顺序栈
 public class Maze {
     private int ord;
     private Position seat;
