@@ -3,6 +3,7 @@ package com.lz.study;
 
 /**
  * @author 小灰灰
+ * 顺序表
  */
 public class ListDemo {
 
