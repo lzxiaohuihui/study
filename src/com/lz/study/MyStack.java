@@ -1,7 +1,7 @@
 package com.lz.study;
 
 import java.util.ArrayList;
-//
+//顺序栈
 public class MyStack {
     ArrayList<Object> stack ;
     //栈底下标
