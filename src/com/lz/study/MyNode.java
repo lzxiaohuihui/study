@@ -1,5 +1,6 @@
 package com.lz.study;
 
+//链式表
 public class MyNode {
     private Node head;
     private Node last;
