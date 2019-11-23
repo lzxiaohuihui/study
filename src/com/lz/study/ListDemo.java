@@ -1,4 +1,4 @@
-package com.lz.list;
+package com.lz.study;
 
 
 /**

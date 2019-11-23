@@ -1,6 +1,5 @@
-package com.lz.list;
+package com.lz.study;
 
-import javax.swing.*;
 import java.util.ArrayList;
 //
 public class MyStack {

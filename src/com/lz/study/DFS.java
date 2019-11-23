@@ -1,4 +1,4 @@
-package com.lz.list;
+package com.lz.study;
 
 public class DFS {
     private final int INT_MAX = 1000;
@@ -78,7 +78,6 @@ public class DFS {
         dfs.createGraph();
         dfs.dfsTraverse(0);
     }
-
 }
 
 

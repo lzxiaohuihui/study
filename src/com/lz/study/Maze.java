@@ -1,8 +1,6 @@
-package com.lz.list;
+package com.lz.study;
 
-import java.io.PushbackInputStream;
 import java.util.Arrays;
-import java.util.Map;
 
 public class Maze {
     private int ord;

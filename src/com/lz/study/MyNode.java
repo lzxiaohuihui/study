@@ -1,4 +1,4 @@
-package com.lz.list;
+package com.lz.study;
 
 public class MyNode {
     private Node head;
