@@ -1,5 +1,5 @@
 package com.lz.study;
-
+//深度优先
 public class DFS {
     private final int INT_MAX = 1000;
     private final int MAX_NUM = 20;
