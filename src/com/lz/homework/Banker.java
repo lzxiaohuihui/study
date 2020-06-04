@@ -41,7 +41,6 @@ public class Banker {
             res.add(new ArrayList<>(path));
             return;
         }
-
         for (int i=0; i<n; i++){
             if (!flag[i]){
                 finish = new boolean[m];
@@ -58,7 +57,9 @@ public class Banker {
                     flag[i] = true;
                     travel(work,finish,flag,curs+1,path,res);
                     path.pop();
-
+                    for (int j=0; j<m; j++){
+                        work[j] -= allocation[i][j];
+                    }
                     flag[i] = false;
                 }
 

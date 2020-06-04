@@ -6,6 +6,7 @@ import java.util.*;
  * 380. 常数时间插入、删除和获取随机元素
  *
  *
+ * @author 小灰灰
  */
 public class RandomizedSet {
     Map<Integer,Integer> map;

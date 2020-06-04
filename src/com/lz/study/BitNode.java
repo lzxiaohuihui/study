@@ -6,11 +6,15 @@ import java.util.List;
 
 /**
  * @author 小灰灰
+ * 线索二叉树
  */
 public class BitNode<main> {
     Object data ;
     BitNode left;
     BitNode right;
+    //新加
+    BitNode lChild, rChild,pre;
+    int lTag, rTag;
 
     public BitNode(Object data){
         this.data = data;
@@ -100,17 +104,44 @@ public class BitNode<main> {
         return objectList;
     }
 
+    //二叉树线索化
+    public void inOrderThreading(){
+        List<Object> objectList = this.inOrderTraverse();
+        for (int i = 0; i<objectList.size(); i++){
+            if (((BitNode) objectList.get(i)).left == null){
+                ((BitNode) objectList.get(i)).lTag = 0;
+                ((BitNode) objectList.get(i)).lChild = this;
+            }
+            else{
+                ((BitNode) objectList.get(i)).lTag = 1;
+                ((BitNode) objectList.get(i)).lChild = ((BitNode) objectList.get(i)).left;
+            }
+
+            if (((BitNode) objectList.get(i)).right == null){
+                ((BitNode) objectList.get(i)).rTag = 0;
+                ((BitNode) objectList.get(i)).rChild = this;
+            }
+            else{
+                ((BitNode) objectList.get(i)).rTag = 1;
+                ((BitNode) objectList.get(i)).rChild = ((BitNode) objectList.get(i)).right;
+            }
+
+        }
+    }
+    //
+
     @Override
     public String toString() {
         return this.data+"";
     }
 
-//    public static void main(String[] args) {
-//        int[] nodes = new int[]{2,1,5,3,6,3,7};
-//        BitNode bitNode = new BitNode();
-//        for (int node:nodes){
-//            bitNode.addNode(node);
-//        }
-//        System.out.println(bitNode.inOrderTraverse());
-//    }
+    public static void main(String[] args) {
+        int[] nodes = new int[]{2,1,5,3,6,3,7};
+        BitNode bitNode = new BitNode();
+        for (int node:nodes){
+            bitNode.addNode(node);
+        }
+        bitNode.inOrderThreading();
+        System.out.println(bitNode.inOrderTraverse());
+    }
 }
